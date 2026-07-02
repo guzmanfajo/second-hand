@@ -1,48 +1,63 @@
+import { ShoppingBag } from "lucide-react";
+
 function Navbar() {
     return (
         <header className="border-b border-[var(--border)] bg-[var(--surface)]">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
+            <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-12 py-8">
                 <h1 className="text-4xl uppercase tracking-[0.2em]">
                     Second Hand
                 </h1>
 
-                <ul className="flex items-center gap-8">
-                    <li>
-                        <a
-                            href="#"
-                            className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                        >
-                            Home
-                        </a>
-                    </li>
+                <div className="flex items-center gap-8">
+                    <ul className="flex items-center gap-12">
+                        <li>
+                            <a
+                                href="#"
+                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
+                            >
+                                Home
+                            </a>
+                        </li>
 
-                    <li>
-                        <a
-                            href="#"
-                            className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                        >
-                            Shop
-                        </a>
-                    </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
+                            >
+                                Shop
+                            </a>
+                        </li>
 
-                    <li>
-                        <a
-                            href="#"
-                            className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                        >
-                            About
-                        </a>
-                    </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
+                            >
+                                About
+                            </a>
+                        </li>
 
-                    <li>
-                        <a
-                            href="#"
-                            className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                        >
-                            Contact
-                        </a>
-                    </li>                   
-                </ul>
+                        <li>
+                            <a
+                                href="#"
+                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
+                            >
+                                Contact
+                            </a>
+                        </li>           
+                    </ul>
+
+                    <a
+                        href="#"
+                        aria-label="Shopping cart"
+                        className="ml-3 transition-opacity duration-300 hover:opacity-70"
+                    >
+                        <ShoppingBag
+                            size={22}
+                            strokeWidth={1.5}
+                        />
+                    </a>
+                </div>
             </nav>
         </header>
     );
