@@ -1,5 +1,12 @@
 import { ShoppingBag } from "lucide-react";
 
+const navigationLinks = [
+    "Home",
+    "Shop",
+    "About",
+    "Contact",
+];
+
 function Navbar() {
     return (
         <header className="border-b border-[var(--border)] bg-[var(--surface)]">
@@ -9,42 +16,20 @@ function Navbar() {
                 </h1>
 
                 <div className="flex items-center gap-8">
+                    
                     <ul className="flex items-center gap-12">
-                        <li>
-                            <a
-                                href="#"
-                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                            >
-                                Home
-                            </a>
-                        </li>
 
-                        <li>
-                            <a
-                                href="#"
-                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                            >
-                                Shop
-                            </a>
-                        </li>
+                        {navigationLinks.map((link) => (
+                            <li key={link}>
+                                <a
+                                    href="#"
+                                    className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
+                                >
+                                    {link}
+                                </a>
+                            </li>
+                        ))}   
 
-                        <li>
-                            <a
-                                href="#"
-                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                            >
-                                About
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="#"
-                                className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
-                            >
-                                Contact
-                            </a>
-                        </li>           
                     </ul>
 
                     <a
