@@ -82,7 +82,7 @@ export const products = [
         name: "Classic Blue Jeans",
         price: 44.00,
         size: "32",
-        category: "Jeans",
+        category: "Pants",
         image: classicBlueJeans,
     },
     {

@@ -1,10 +1,12 @@
-import featuredImage from "../assets/images/featured/featured-collection.png";
+import featuredImage from "../../assets/images/featured/featured-collection.png";
+import Container from "../ui/Container";
+import Button from "../ui/Button";
 
 function FeaturedCollection() {
     return (
-        <section className="bg-[var(--section)]">
+        <section id="featured" className="bg-[var(--section)]">
 
-            <div className="mx-auto flex max-w-[1600px] items-center gap-24 px-12 py-32">
+            <Container className="flex items-center gap-24 py-32">
 
                 <div className="w-1/2">
                     <img
@@ -32,16 +34,13 @@ function FeaturedCollection() {
                         carefully chosen to bring vintage fashion into everyday life.
                     </p>
 
-                    <a
-                        href="#"
-                        className="inline-block border border-[var(--text-primary)] px-8 py-4 uppercase tracking-widest transition-colors duration-300 hover:bg-[var(--text-primary)] hover:text-white"
-                    >
+                    <Button>
                         Shop Featured
-                    </a>
+                    </Button>
 
                 </div>
 
-            </div>
+            </Container>
 
         </section>
     );

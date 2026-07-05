@@ -1,10 +1,11 @@
 import { ShoppingBag } from "lucide-react";
 
 const navigationLinks = [
-    "Home",
-    "Shop",
-    "About",
-    "Contact",
+    { label: "Home", href: "#home" },
+    { label: "Shop", href: "#shop" },
+    { label: "Featured", href: "#featured" },
+    { label: "About", href: "#about" },
+    { label: "Newsletter", href: "#newsletter" },
 ];
 
 function Navbar() {
@@ -20,12 +21,12 @@ function Navbar() {
                     <ul className="flex items-center gap-12">
 
                         {navigationLinks.map((link) => (
-                            <li key={link}>
+                            <li key={link.href}>
                                 <a
-                                    href="#"
+                                    href={link.href}
                                     className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
                                 >
-                                    {link}
+                                    {link.label}
                                 </a>
                             </li>
                         ))}   

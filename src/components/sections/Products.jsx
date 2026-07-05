@@ -1,26 +1,34 @@
-import ProductCard from "./ProductCard";
-import { products } from "../data/products";
-
-const categories = [
-    "All",
-    "Jackets",
-    "Shirts",
-    "Sweaters",
-    "Jeans",
-];
+import { useState } from "react";
+import ProductCard from "../ui/ProductCard";
+import Container from "../ui/Container";
+import { products } from "../../data/products";
 
 function Products() {
-    return (
-        <section className="bg-[var(--surface)]">
+    const [selectedCategory, setSelectedCategory] = useState("All");
 
-            <div className="mx-auto max-w-[1600px] px-12 py-24">
+    const filteredProducts =
+        selectedCategory === "All"
+            ? products
+            : products.filter(
+                (product) => product.category === selectedCategory
+            );
+
+    const categories = [
+        "All",
+        ...new Set(products.map((product) => product.category)),
+    ];
+
+    return (
+        <section id="shop" className="bg-[var(--surface)]">
+
+            <Container className="py-32">
                 
                 <div className="mb-14">
                     <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)]">
                         New Arrivals
                     </p>
 
-                    <h2 className="mb-4 text-5xl">
+                    <h2 className="mb-4 text-6xl">
                         Curated Vintage Pieces
                     </h2>
 
@@ -34,8 +42,9 @@ function Products() {
                     {categories.map((category) => (
                         <button
                             key={category}
+                            onClick={() => setSelectedCategory(category)}
                             className={`rounded-full border px-6 py-2 text-sm uppercase tracking-wider transition-colors duration-300 ${
-                                category === "All"
+                                category === selectedCategory
                                     ? "border-[var(--text-primary)] bg-[var(--text-primary)] text-white"
                                     : "border-[var(--border)] hover:bg-[var(--text-primary)] hover:text-white"
                             }`}
@@ -46,7 +55,7 @@ function Products() {
                 </div>
                 
                 <div className="grid grid-cols-4 gap-8">
-                    {products.map((product) => (
+                    {filteredProducts.map((product) => (
                         <ProductCard
                             key={product.id}
                             product={product}
@@ -54,7 +63,7 @@ function Products() {
                     ))}
                 </div>
 
-            </div>
+            </Container>
         </section>
     );
 }
