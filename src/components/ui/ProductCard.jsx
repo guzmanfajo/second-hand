@@ -8,12 +8,12 @@ function ProductCard({ product }) {
     } = product;
 
     return (
-        <article className="group overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--surface)] transition-all duration-300 hover:-translate-y-2">
+        <article className="group overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--surface)] transition-all duration-300 hover:-translate-y-2 hover:border-[var(--accent)]">
             <div className="overflow-hidden">
                 <img
                     src={image}
                     alt={name}
-                    className="h-[420px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="h-[420px] w-full object-cover"
                 />
             </div>
 

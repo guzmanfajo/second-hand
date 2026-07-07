@@ -19,9 +19,9 @@ function Products() {
     ];
 
     return (
-        <section id="shop" className="bg-[var(--surface)]">
+        <section id="shop" className="bg-[var(--section)]">
 
-            <Container className="py-32">
+            <Container className="py-26">
                 
                 <div className="mb-14">
                     <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)]">

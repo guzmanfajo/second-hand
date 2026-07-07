@@ -3,7 +3,6 @@ import Container from "../ui/Container";
 const footerLinks = [
     { label: "Home", href: "#home" },
     { label: "Shop", href: "#shop" },
-    { label: "Featured", href: "#featured" },
     { label: "About", href: "#about" },
     { label: "Newsletter", href: "#newsletter" },
 ];

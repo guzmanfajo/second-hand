@@ -2,10 +2,14 @@ import vintageBlackDenimJacket from "../assets/images/products/vintage-black-den
 import waxedCanvasJacket from "../assets/images/products/waxed-canvas-jacket.png";
 import sportWindbreaker from "../assets/images/products/sport-windbreaker.png";
 import performanceShellJacket from "../assets/images/products/performance-shell-jacket.png";
-import oliveKnitSweater from "../assets/images/products/olive-knit-sweater.png";
+import oliveCrewneckSweater from "../assets/images/products/olive-crewneck-sweater.png";
+import oatmealCrewneckSweater from "../assets/images/products/oatmeal-crewneck-sweater.png";
+import charcoalHalfzipSweater from "../assets/images/products/charcoal-halfzip-sweater.png";
+import taupeHalfzipSweater from "../assets/images/products/taupe-halfzip-sweater.png";
+import brownPlaidFlannelShirt from "../assets/images/products/brown-plaid-flannel-shirt.png";
+import olivePlaidFlannelShirt from "../assets/images/products/olive-plaid-flannel-shirt.png";
 import brownCorduroyShirt from "../assets/images/products/brown-corduroy-shirt.png";
 import stripedRugbyShirt from "../assets/images/products/striped-rugby-shirt.png";
-import navyRugbyShirt from "../assets/images/products/navy-rugby-shirt.png";
 import classicBlueJeans from "../assets/images/products/classic-blue-jeans.png";
 import khakiUtilityChinos from "../assets/images/products/khaki-utility-chinos.png";
 import grayRelaxedChinos from "../assets/images/products/gray-relaxed-chinos.png";
@@ -47,14 +51,38 @@ export const products = [
     },
     {
         id: 5,
-        name: "Olive Knit Sweater",
-        price: 42.00,
+        name: "Olive Crewneck Sweater",
+        price: 46.00,
         size: "L",
         category: "Sweaters",
-        image: oliveKnitSweater,
+        image: oliveCrewneckSweater,
     },
     {
         id: 6,
+        name: "Oatmeal Crewneck Sweater",
+        price: 46.00,
+        size: "M",
+        category: "Sweaters",
+        image: oatmealCrewneckSweater,
+    },
+    {
+        id: 7,
+        name: "Charcoal Half-Zip Sweater",
+        price: 55.00,
+        size: "XL",
+        category: "Sweaters",
+        image: charcoalHalfzipSweater,
+    },
+    {
+        id: 8,
+        name: "Taupe Half-Zip Sweater",
+        price: 55.00,
+        size: "L",
+        category: "Sweaters",
+        image: taupeHalfzipSweater,
+    },
+    {
+        id: 9,
         name: "Brown Corduroy Shirt",
         price: 36.00,
         size: "M",
@@ -62,7 +90,7 @@ export const products = [
         image: brownCorduroyShirt,
     },
     {
-        id: 7,
+        id: 10,
         name: "Striped Rugby Shirt",
         price: 39.00,
         size: "L",
@@ -70,15 +98,23 @@ export const products = [
         image: stripedRugbyShirt,
     },
     {
-        id: 8,
-        name: "Navy Rugby Shirt",
-        price: 41.00,
+        id: 11,
+        name: "Brown Plaid Flannel Shirt",
+        price: 43.00,
         size: "L",
         category: "Shirts",
-        image: navyRugbyShirt,
+        image: brownPlaidFlannelShirt,
     },
     {
-        id: 9,
+        id: 12,
+        name: "Olive Plaid Flannel Shirt",
+        price: 45.00,
+        size: "XL",
+        category: "Shirts",
+        image: olivePlaidFlannelShirt,
+    },
+    {
+        id: 13,
         name: "Classic Blue Jeans",
         price: 44.00,
         size: "32",
@@ -86,7 +122,7 @@ export const products = [
         image: classicBlueJeans,
     },
     {
-        id: 10,
+        id: 14,
         name: "Khaki Utility Chinos",
         price: 47.00,
         size: "33",
@@ -94,7 +130,7 @@ export const products = [
         image: khakiUtilityChinos,
     },
     {
-        id: 11,
+        id: 15,
         name: "Gray Relaxed Chinos",
         price: 48.00,
         size: "32",
@@ -102,7 +138,7 @@ export const products = [
         image: grayRelaxedChinos,
     },
     {
-        id: 12,
+        id: 16,
         name: "Black Wide-Leg Trousers",
         price: 52.00,
         size: "34",

@@ -3,14 +3,13 @@ import { ShoppingBag } from "lucide-react";
 const navigationLinks = [
     { label: "Home", href: "#home" },
     { label: "Shop", href: "#shop" },
-    { label: "Featured", href: "#featured" },
     { label: "About", href: "#about" },
     { label: "Newsletter", href: "#newsletter" },
 ];
 
 function Navbar() {
     return (
-        <header className="border-b border-[var(--border)] bg-[var(--surface)]">
+        <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--surface)]/90 backdrop-blur">
             <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-12 py-8">
                 <h1 className="text-4xl uppercase tracking-[0.2em]">
                     Second Hand
