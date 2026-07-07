@@ -1,7 +1,7 @@
 export const stats = [
     {
         id: 1,
-        value: "300+",
+        value: "20+",
         label: "Curated Pieces",
     },
     {

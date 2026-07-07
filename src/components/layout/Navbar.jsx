@@ -11,8 +11,13 @@ function Navbar() {
     return (
         <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--surface)]/90 backdrop-blur">
             <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-12 py-8">
-                <h1 className="text-4xl uppercase tracking-[0.2em]">
-                    Second Hand
+                <h1>
+                    <a
+                        href="#home" 
+                        className="text-4xl uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-70"
+                        >
+                            Second Hand
+                    </a>
                 </h1>
 
                 <div className="flex items-center gap-8">

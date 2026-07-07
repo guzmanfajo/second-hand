@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 function Hero() {
     return (
-        <section id="home" className="bg-[var(--surface)]">
+        <section id="home" className="scroll-mt-28 bg-[var(--surface)]">
 
             <Container className="flex items-center gap-24 py-15">
 
@@ -34,7 +34,9 @@ function Hero() {
                         carefully chosen to bring vintage fashion into everyday life.
                     </p>
 
-                    <Button>
+                    <Button
+                        href="#shop"
+                    >
                         Explore Collection
                     </Button>
 

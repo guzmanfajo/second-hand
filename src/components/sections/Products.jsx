@@ -19,7 +19,7 @@ function Products() {
     ];
 
     return (
-        <section id="shop" className="bg-[var(--section)]">
+        <section id="shop" className="scroll-mt-16 bg-[var(--section)]">
 
             <Container className="py-26">
                 

@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function Newsletter() {
     return (
-        <section id="newsletter" className="bg-[var(--section)]">
+        <section id="newsletter" className="scroll-mt-16 bg-[var(--section)]">
             
             <Container className="py-32">
 

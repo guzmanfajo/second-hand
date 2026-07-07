@@ -3,7 +3,7 @@ import Container from "../ui/Container";
 
 function OurStory() {
     return (
-        <section id="about" className="bg-[var(--surface)]">
+        <section id="about" className="scroll-mt-16 bg-[var(--surface)]">
 
             <Container className="py-32">
 

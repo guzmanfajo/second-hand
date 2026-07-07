@@ -13,8 +13,13 @@ function Footer() {
 
             <Container className="flex items-center justify-between py-12">
 
-                <h2 className="text-3xl uppercase tracking-[0.2em]">
-                    Second Hand
+                <h2>
+                    <a
+                        href="#home"
+                        className="text-3xl uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-70"
+                    >                       
+                        Second Hand
+                    </a>
                 </h2>
 
                 <ul className="flex items-center gap-10">
