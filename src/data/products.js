@@ -23,6 +23,7 @@ export const products = [
         price: 62.00,
         size: "L",
         category: "Jackets",
+        description: "Classic black denim jacket with a timeless vintage look. Perfect for layering through every season.",
         image: vintageBlackDenimJacket,
     },
     {
@@ -31,6 +32,7 @@ export const products = [
         price: 69.00,
         size: "L",
         category: "Jackets",
+        description: "Durable waxed canvas jacket inspired by classic workwear. Built for everyday comfort and style.",
         image: waxedCanvasJacket,
     },
     {
@@ -39,6 +41,7 @@ export const products = [
         price: 54.00,
         size: "M",
         category: "Jackets",
+        description: "Lightweight windbreaker with a clean vintage sports aesthetic. Easy to wear on casual days.",
         image: sportWindbreaker,
     },
     {
@@ -47,6 +50,7 @@ export const products = [
         price: 68.00,
         size: "L",
         category: "Jackets",
+        description: "Technical shell jacket combining modern functionality with retro outdoor style.",
         image: performanceShellJacket,
     },
     {
@@ -55,6 +59,7 @@ export const products = [
         price: 46.00,
         size: "L",
         category: "Sweaters",
+        description: "Soft knit sweater in a timeless olive tone. A versatile essential for everyday outfits.",
         image: oliveCrewneckSweater,
     },
     {
@@ -63,6 +68,7 @@ export const products = [
         price: 46.00,
         size: "M",
         category: "Sweaters",
+        description: "Cozy crewneck sweater in a warm oatmeal color. Simple, comfortable and easy to style.",
         image: oatmealCrewneckSweater,
     },
     {
@@ -71,6 +77,7 @@ export const products = [
         price: 55.00,
         size: "XL",
         category: "Sweaters",
+        description: "Relaxed half-zip sweater with a charcoal finish. A perfect blend of comfort and vintage appeal.",
         image: charcoalHalfzipSweater,
     },
     {
@@ -79,6 +86,7 @@ export const products = [
         price: 55.00,
         size: "L",
         category: "Sweaters",
+        description: "Minimalist half-zip sweater in a soft taupe shade. Ideal for effortless layering.",
         image: taupeHalfzipSweater,
     },
     {
@@ -87,6 +95,7 @@ export const products = [
         price: 36.00,
         size: "M",
         category: "Shirts",
+        description: "Vintage-inspired corduroy shirt with a rich brown finish. Soft texture and timeless character.",
         image: brownCorduroyShirt,
     },
     {
@@ -95,6 +104,7 @@ export const products = [
         price: 39.00,
         size: "L",
         category: "Shirts",
+        description: "Classic rugby shirt featuring bold horizontal stripes. A timeless piece with effortless style.",
         image: stripedRugbyShirt,
     },
     {
@@ -103,6 +113,7 @@ export const products = [
         price: 43.00,
         size: "L",
         category: "Shirts",
+        description: "Soft plaid flannel shirt in warm brown tones. Perfect for a relaxed vintage look.",
         image: brownPlaidFlannelShirt,
     },
     {
@@ -111,6 +122,7 @@ export const products = [
         price: 45.00,
         size: "XL",
         category: "Shirts",
+        description: "Classic olive plaid flannel made for comfort and everyday wear. A wardrobe staple.",
         image: olivePlaidFlannelShirt,
     },
     {
@@ -119,6 +131,7 @@ export const products = [
         price: 44.00,
         size: "32",
         category: "Pants",
+        description: "Straight-fit blue jeans with a timeless vintage wash. Designed for everyday versatility.",
         image: classicBlueJeans,
     },
     {
@@ -127,6 +140,7 @@ export const products = [
         price: 47.00,
         size: "33",
         category: "Pants",
+        description: "Relaxed utility chinos in a classic khaki color. Clean lines with a workwear-inspired feel.",
         image: khakiUtilityChinos,
     },
     {
@@ -135,6 +149,7 @@ export const products = [
         price: 48.00,
         size: "32",
         category: "Pants",
+        description: "Relaxed-fit chinos in a versatile gray tone. Easy to pair with any casual outfit.",
         image: grayRelaxedChinos,
     },
     {
@@ -143,6 +158,7 @@ export const products = [
         price: 52.00,
         size: "34",
         category: "Pants",
+        description: "Wide-leg black trousers with a clean, modern silhouette. A refined take on vintage fashion.",
         image: blackWidelegTrousers,
     },
 ];
