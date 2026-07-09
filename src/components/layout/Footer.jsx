@@ -9,7 +9,7 @@ const footerLinks = [
 
 function Footer() {
     return (
-        <footer className="bg-[var(--text-primary)] text-white">
+        <footer className="bg-(--text-primary) text-white">
 
             <Container className="flex items-center justify-between py-12">
 

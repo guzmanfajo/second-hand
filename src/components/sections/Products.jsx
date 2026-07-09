@@ -19,12 +19,12 @@ function Products() {
     ];
 
     return (
-        <section id="shop" className="scroll-mt-16 bg-[var(--section)]">
+        <section id="shop" className="scroll-mt-16 bg-(--section)">
 
             <Container className="py-26">
                 
                 <div className="mb-14">
-                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)]">
+                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--text-secondary)">
                         New Arrivals
                     </p>
 
@@ -32,7 +32,7 @@ function Products() {
                         Curated Vintage Pieces
                     </h2>
 
-                    <p className="max-w-2xl leading-8 text-[var(--text-secondary)]">
+                    <p className="max-w-2xl leading-8 text-(--text-secondary)">
                         A carefully selected collection of timeless second-hand
                         clothing chosen for quality, character and everyday style.
                     </p>
@@ -45,8 +45,8 @@ function Products() {
                             onClick={() => setSelectedCategory(category)}
                             className={`rounded-full border px-6 py-2 text-sm uppercase tracking-wider transition-colors duration-300 ${
                                 category === selectedCategory
-                                    ? "border-[var(--text-primary)] bg-[var(--text-primary)] text-white"
-                                    : "border-[var(--border)] hover:bg-[var(--text-primary)] hover:text-white"
+                                    ? "border-(--text-primary) bg-(--text-primary) text-white"
+                                    : "border-(--border) hover:bg-(--text-primary) hover:text-white"
                             }`}
                                     >
                             {category}

@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
-function ProductCard({ product }) {
+function ProductCard({
+        product,
+        variant = "default",
+     }) {
+
     const {
         id,
         name,
@@ -10,14 +14,19 @@ function ProductCard({ product }) {
         image,
     } = product;
 
+    const imageClasses =
+        variant === "compact"
+            ? "h-[320px] w-full object-cover"
+            : "h-[420px] w-full object-cover";
+
     return (
         <Link to={`/products/${id}`}>
-            <article className="group overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--surface)] transition-all duration-300 hover:-translate-y-2 hover:border-[var(--accent)]">
+            <article className="group overflow-hidden rounded-lg border border-(--border) bg-(--surface) transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)">
                 <div className="overflow-hidden">
                     <img
                         src={image}
                         alt={name}
-                        className="h-[420px] w-full object-cover"
+                        className={imageClasses}
                     />
                 </div>
 
@@ -25,7 +34,7 @@ function ProductCard({ product }) {
                     <div>
                         <h3 className="text-3xl">{name}</h3>
 
-                        <p className="mt-2 text-sm uppercase tracking-[0.2em] text-[var(--text-secondary)]">
+                        <p className="mt-2 text-sm uppercase tracking-[0.2em] text-(--text-secondary)">
                             {category}  · Size {size}
                         </p>
                     </div>

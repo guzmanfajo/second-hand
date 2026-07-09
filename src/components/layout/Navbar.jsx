@@ -9,7 +9,7 @@ const navigationLinks = [
 
 function Navbar() {
     return (
-        <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--surface)]/90 backdrop-blur">
+        <header className="sticky top-0 z-50 border-b border-(--border) bg-(--surface)/90 backdrop-blur">
             <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-12 py-8">
                 <h1>
                     <a

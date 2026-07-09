@@ -2,15 +2,16 @@ function Button({
     children,
     href,
     type = "button",
+    className = "",
 }) {
-    const className =
-        "inline-block border border-[var(--text-primary)] px-8 py-4 uppercase tracking-widest transition-colors duration-300 hover:bg-[var(--text-primary)] hover:text-white";
+    const baseClasses =
+        "inline-block border border-(--text-primary) px-8 py-4 uppercase tracking-widest transition-colors duration-300 hover:bg-(--text-primary) hover:text-white";
 
         if (href) {
             return (
                 <a
                     href={href}
-                    className={className}
+                    className={`${baseClasses} ${className}`}
                 >
                     {children}
                 </a>
@@ -20,7 +21,7 @@ function Button({
         return (
             <button
                 type={type}
-                className={className}
+                className={`${baseClasses} ${className}`}
             >
                 {children}
             </button>

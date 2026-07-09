@@ -3,13 +3,13 @@ import Button from "../ui/Button";
 
 function Newsletter() {
     return (
-        <section id="newsletter" className="scroll-mt-16 bg-[var(--section)]">
+        <section id="newsletter" className="scroll-mt-16 bg-(--section)">
             
             <Container className="py-32">
 
                 <div className="mx-auto max-w-3xl text-center">
 
-                    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)]">
+                    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-(--text-secondary)">
                         Newsletter
                     </p>
 
@@ -17,7 +17,7 @@ function Newsletter() {
                         Stay Updated
                     </h2>
 
-                    <p className="mb-12 leading-8 text-[var(--text-secondary)]">
+                    <p className="mb-12 leading-8 text-(--text-secondary)">
                         Be the first to discover new arrivals, curated collections
                         and exclusive vintage finds.
                     </p>
@@ -27,7 +27,7 @@ function Newsletter() {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="flex-1 border border-[var(--border)] bg-[var(--surface)] px-6 py-4 outline-none"
+                            className="flex-1 border border-(--border) bg-(--surface) px-6 py-4 outline-none"
                         />
 
                         <Button type="submit">

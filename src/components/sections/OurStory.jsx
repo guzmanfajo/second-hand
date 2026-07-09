@@ -3,13 +3,13 @@ import Container from "../ui/Container";
 
 function OurStory() {
     return (
-        <section id="about" className="scroll-mt-16 bg-[var(--surface)]">
+        <section id="about" className="scroll-mt-16 bg-(--surface)">
 
             <Container className="py-32">
 
                 <div className="mx-auto max-w-4xl text-center">
 
-                    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)]">
+                    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-(--text-secondary)">
                         Our Story
                     </p>
 
@@ -17,7 +17,7 @@ function OurStory() {
                         More Than Clothing
                     </h2>
 
-                    <p className="mx-auto mb-20 max-w-3xl leading-8 text-[var(--text-secondary)]">
+                    <p className="mx-auto mb-20 max-w-3xl leading-8 text-(--text-secondary)">
                         We believe every garment deserves a second life.
                         Our mission is to curate timeless vintage pieces
                         that celebrate quality craftsmanship, individuality
@@ -32,7 +32,7 @@ function OurStory() {
                                     {stat.value}
                                 </h3>
 
-                                <p className="uppercase tracking-widest text-[var(--text-secondary)]">
+                                <p className="uppercase tracking-widest text-(--text-secondary)">
                                     {stat.label}
                                 </p>
                             </div>

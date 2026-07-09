@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 function Hero() {
     return (
-        <section id="home" className="scroll-mt-28 bg-[var(--surface)]">
+        <section id="home" className="scroll-mt-28 bg-(--surface)">
 
             <Container className="flex items-center gap-24 py-15">
 
@@ -12,13 +12,13 @@ function Hero() {
                     <img
                         src={heroImage}
                         alt="Featured vintage collection"
-                        className="h-[700px] w-full rounded object-cover"
+                        className="h-175 w-full rounded object-cover"
                     />
                 </div>
 
                 <div className="w-1/2">
 
-                    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)]">
+                    <p className="mb-4 text-sm uppercase tracking-[0.3em] text-(--text-secondary)">
                         Vintage Collection
                     </p>
 
@@ -28,7 +28,7 @@ function Hero() {
                         timeless clothing.
                     </h2>
 
-                    <p className="mb-10 max-w-xl leading-8 text-[var(--text-secondary)]">
+                    <p className="mb-10 max-w-xl leading-8 text-(--text-secondary)">
                         Build a timeless wardrobe with versatile pieces selected for
                         their quality, character and lasting style. Every garment is
                         carefully chosen to bring vintage fashion into everyday life.
