@@ -19,7 +19,7 @@ function Products() {
     ];
 
     return (
-        <section id="shop" className="scroll-mt-16 bg-(--section)">
+        <section id="shop" className="scroll-mt-4 bg-(--section)">
 
             <Container className="py-26">
                 

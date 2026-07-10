@@ -1,6 +1,6 @@
 import vintageBlackDenimJacket from "../assets/images/products/vintage-black-denim-jacket.png";
+import vintageIndigoDenimJacket from "../assets/images/products/vintage-indigo-denim-jacket.png";
 import waxedCanvasJacket from "../assets/images/products/waxed-canvas-jacket.png";
-import sportWindbreaker from "../assets/images/products/sport-windbreaker.png";
 import performanceShellJacket from "../assets/images/products/performance-shell-jacket.png";
 import oliveCrewneckSweater from "../assets/images/products/olive-crewneck-sweater.png";
 import oatmealCrewneckSweater from "../assets/images/products/oatmeal-crewneck-sweater.png";
@@ -11,9 +11,9 @@ import olivePlaidFlannelShirt from "../assets/images/products/olive-plaid-flanne
 import brownCorduroyShirt from "../assets/images/products/brown-corduroy-shirt.png";
 import stripedRugbyShirt from "../assets/images/products/striped-rugby-shirt.png";
 import classicBlueJeans from "../assets/images/products/classic-blue-jeans.png";
+import classicBlackJeans from "../assets/images/products/classic-black-jeans.png";
 import khakiUtilityChinos from "../assets/images/products/khaki-utility-chinos.png";
 import grayRelaxedChinos from "../assets/images/products/gray-relaxed-chinos.png";
-import blackWidelegTrousers from "../assets/images/products/black-wideleg-trousers.png";
 
 
 export const products = [
@@ -28,21 +28,21 @@ export const products = [
     },
     {
         id: 2,
+        name: "Vintage Indigo Denim Jacket",
+        price: 64.00,
+        size: "L",
+        category: "Jackets",
+        description: "Classic indigo denim jacket with a timeless vintage wash. A versatile layering piece for every season.",
+        image: vintageIndigoDenimJacket,
+    },
+    {
+        id: 3,
         name: "Waxed Canvas Jacket",
         price: 69.00,
         size: "L",
         category: "Jackets",
         description: "Durable waxed canvas jacket inspired by classic workwear. Built for everyday comfort and style.",
         image: waxedCanvasJacket,
-    },
-    {
-        id: 3,
-        name: "Sport Windbreaker",
-        price: 54.00,
-        size: "M",
-        category: "Jackets",
-        description: "Lightweight windbreaker with a clean vintage sports aesthetic. Easy to wear on casual days.",
-        image: sportWindbreaker,
     },
     {
         id: 4,
@@ -136,6 +136,15 @@ export const products = [
     },
     {
         id: 14,
+        name: "Classic Black Jeans",
+        price: 46.00,
+        size: "34",
+        category: "Pants",
+        description: "Straight-fit black jeans with a timeless vintage finish. An everyday staple that pairs effortlessly with any outfit.",
+        image: classicBlackJeans,
+    },
+    {
+        id: 15,
         name: "Khaki Utility Chinos",
         price: 47.00,
         size: "33",
@@ -144,21 +153,12 @@ export const products = [
         image: khakiUtilityChinos,
     },
     {
-        id: 15,
+        id: 16,
         name: "Gray Relaxed Chinos",
         price: 48.00,
         size: "32",
         category: "Pants",
         description: "Relaxed-fit chinos in a versatile gray tone. Easy to pair with any casual outfit.",
         image: grayRelaxedChinos,
-    },
-    {
-        id: 16,
-        name: "Black Wide-Leg Trousers",
-        price: 52.00,
-        size: "34",
-        category: "Pants",
-        description: "Wide-leg black trousers with a clean, modern silhouette. A refined take on vintage fashion.",
-        image: blackWidelegTrousers,
     },
 ];

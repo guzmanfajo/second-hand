@@ -16,7 +16,7 @@ function ProductCard({
 
     const imageClasses =
         variant === "compact"
-            ? "h-[320px] w-full object-cover"
+            ? "h-[20px] w-full object-cover"
             : "h-[420px] w-full object-cover";
 
     return (
@@ -32,7 +32,7 @@ function ProductCard({
 
                 <div className="space-y-3 p-6">
                     <div>
-                        <h3 className="text-3xl">{name}</h3>
+                        <h3 className="min-h-20 text-3xl">{name}</h3>
 
                         <p className="mt-2 text-sm uppercase tracking-[0.2em] text-(--text-secondary)">
                             {category}  · Size {size}
