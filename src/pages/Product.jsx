@@ -48,7 +48,7 @@ function Product() {
             <main className="bg-(--surface)">
                 <div className="mx-auto grid max-w-[1600px] grid-cols-2 gap-20 px-12 py-20">
 
-                    <div>
+                    <div className="transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)">
                         <img
                             src={image}
                             alt={name}

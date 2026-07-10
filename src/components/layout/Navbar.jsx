@@ -1,10 +1,11 @@
 import { ShoppingBag } from "lucide-react";
+import NavigationLink from "../ui/NavigationLink";
 
 const navigationLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Shop", href: "#shop" },
-    { label: "About", href: "#about" },
-    { label: "Newsletter", href: "#newsletter" },
+    { label: "Home", section: "home" },
+    { label: "Shop", section: "shop" },
+    { label: "About", section: "about" },
+    { label: "Newsletter", section: "newsletter" },
 ];
 
 function Navbar() {
@@ -12,12 +13,12 @@ function Navbar() {
         <header className="sticky top-0 z-50 border-b border-(--border) bg-(--surface)/90 backdrop-blur">
             <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-12 py-8">
                 <h1>
-                    <a
-                        href="#home" 
+                    <NavigationLink
+                        section="home"
                         className="text-4xl uppercase tracking-[0.2em] transition-opacity duration-300 hover:opacity-70"
-                        >
-                            Second Hand
-                    </a>
+                    >
+                        Second Hand
+                    </NavigationLink>
                 </h1>
 
                 <div className="flex items-center gap-8">
@@ -26,12 +27,12 @@ function Navbar() {
 
                         {navigationLinks.map((link) => (
                             <li key={link.href}>
-                                <a
-                                    href={link.href}
+                                <NavigationLink
+                                    section={link.section}
                                     className="text-sm uppercase tracking-widest transition-opacity duration-300 hover:opacity-70"
                                 >
                                     {link.label}
-                                </a>
+                                </NavigationLink>
                             </li>
                         ))}   
 

@@ -16,7 +16,7 @@ function ProductCard({
 
     const imageClasses =
         variant === "compact"
-            ? "h-[20px] w-full object-cover"
+            ? "h-[320px] w-full object-cover"
             : "h-[420px] w-full object-cover";
 
     return (

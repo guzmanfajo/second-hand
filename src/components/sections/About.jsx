@@ -3,9 +3,9 @@ import Container from "../ui/Container";
 
 function OurStory() {
     return (
-        <section id="about" className="scroll-mt-16 bg-(--surface)">
+        <section id="about" className="scroll-mt-35 bg-(--surface)">
 
-            <Container className="py-40">
+            <Container className="py-44">
 
                 <div className="mx-auto max-w-5xl text-center">
 

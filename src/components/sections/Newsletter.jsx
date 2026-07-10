@@ -3,9 +3,9 @@ import Button from "../ui/Button";
 
 function Newsletter() {
     return (
-        <section id="newsletter" className="scroll-mt-16 bg-(--section)">
+        <section id="newsletter" className="scroll-mt-20 bg-(--section)">
             
-            <Container className="py-32">
+            <Container className="py-36">
 
                 <div className="mx-auto max-w-3xl text-center">
 

@@ -1,14 +1,14 @@
 import Hero from "../components/sections/Hero";
-import Products from "../components/sections/Products";
-import OurStory from "../components/sections/OurStory";
+import Shop from "../components/sections/Shop";
+import About from "../components/sections/About";
 import Newsletter from "../components/sections/Newsletter";
 
 function Home() {
   return (
     <>
       <Hero />
-      <Products />
-      <OurStory />
+      <Shop />
+      <About />
       <Newsletter />
     </>
   );
