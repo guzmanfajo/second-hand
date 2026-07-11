@@ -44,16 +44,17 @@ function Product() {
         .slice(0, 3);
 
     return (
-        <>
             <main className="bg-(--surface)">
                 <div className="mx-auto grid max-w-[1600px] grid-cols-2 gap-20 px-12 py-20">
 
-                    <div className="transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)">
-                        <img
-                            src={image}
-                            alt={name}
-                            className="h-150 w-fit rounded object-cover border border-(--border)"
-                        />
+                    <div className="max-w-xl transition-all duration-300 hover:-translate-y-2">                   
+                        <div className="aspect-4/5 overflow-hidden rounded border border-(--border)">
+                            <img
+                                src={image}
+                                alt={name}
+                                className="h-full w-full object-cover"
+                            />
+                        </div>
                     </div>
 
                     <div className="flex flex-col justify-center">
@@ -118,14 +119,12 @@ function Product() {
                             <ProductCard
                                 key={relatedProduct.id}
                                 product={relatedProduct}
-                                variant="compact"
                             />
                         ))}
                     </div>
                 </section>
 
             </main>
-        </>
     );
 }
 

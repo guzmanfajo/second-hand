@@ -14,23 +14,18 @@ function ProductCard({
         image,
     } = product;
 
-    const imageClasses =
-        variant === "compact"
-            ? "h-[320px] w-full object-cover"
-            : "h-[420px] w-full object-cover";
-
     return (
         <Link to={`/products/${id}`}>
-            <article className="group overflow-hidden rounded-lg border border-(--border) bg-(--surface) transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)">
-                <div className="overflow-hidden">
+            <article className="group flex h-full flex-col rounded-lg border border-(--border) bg-(--surface) p-4 transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)">
+                <div className="aspect-4/5 overflow-hidden rounded">
                     <img
                         src={image}
                         alt={name}
-                        className={imageClasses}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                 </div>
 
-                <div className="space-y-3 p-6">
+                <div className="flex flex-1 flex-col pt-6">
                     <div>
                         <h3 className="min-h-20 text-3xl">{name}</h3>
 
@@ -39,7 +34,7 @@ function ProductCard({
                         </p>
                     </div>
 
-                    <p className="text-xl font-medium tracking-wide">
+                    <p className="mt-auto pt-6 text-xl font-medium tracking-wide">
                         ${price.toFixed(2)}
                     </p>
                 </div>
