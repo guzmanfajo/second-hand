@@ -16,14 +16,12 @@ function ProductCard({
 
     return (
         <Link to={`/products/${id}`}>
-            <article className="group flex h-full flex-col rounded-lg border border-(--border) bg-(--surface) p-4 transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)">
-                {/* <div className="aspect-4/5 overflow-hidden rounded"> */}
-                    <img
-                        src={image}
-                        alt={name}
-                        className="h-full w-full object-cover rounded transition-transform duration-500 group-hover:scale-105"
-                    />
-                
+            <article className="group flex h-full flex-col rounded-lg border border-(--border) bg-(--surface) p-4 transition-all duration-300 hover:-translate-y-2 hover:border-(--accent)"> 
+                <img
+                    src={image}
+                    alt={name}
+                    className="h-full w-full object-cover rounded transition-transform duration-500 group-hover:scale-105"
+                />
 
                 <div className="flex flex-1 flex-col pt-6">
                     <div>

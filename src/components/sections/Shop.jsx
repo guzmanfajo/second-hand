@@ -21,7 +21,7 @@ function Products() {
     return (
         <section id="shop" className="bg-(--section)">
 
-            <Container className="py-32">
+            <Container className="py-32 max-w-[1650px]">
                 
                 <div className="mb-14">
                     <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--text-secondary)">
