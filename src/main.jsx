@@ -18,7 +18,7 @@ if (redirect) {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/second-hand">
       <App />
     </BrowserRouter>
   </StrictMode>,
