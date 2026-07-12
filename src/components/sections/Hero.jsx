@@ -1,4 +1,4 @@
-import heroImage from "../../assets/images/hero/hero-outfit.png";
+import heroImage from "../../assets/images/hero/hero.png";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 

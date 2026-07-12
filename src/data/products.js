@@ -2,18 +2,10 @@ import vintageBlackDenimJacket from "../assets/images/products/vintage-black-den
 import vintageIndigoDenimJacket from "../assets/images/products/vintage-indigo-denim-jacket.png";
 import waxedCanvasJacket from "../assets/images/products/waxed-canvas-jacket.png";
 import performanceShellJacket from "../assets/images/products/performance-shell-jacket.png";
-import oliveCrewneckSweater from "../assets/images/products/olive-crewneck-sweater.png";
-import oatmealCrewneckSweater from "../assets/images/products/oatmeal-crewneck-sweater.png";
-import charcoalHalfzipSweater from "../assets/images/products/charcoal-halfzip-sweater.png";
-import taupeHalfzipSweater from "../assets/images/products/taupe-halfzip-sweater.png";
 import brownPlaidFlannelShirt from "../assets/images/products/brown-plaid-flannel-shirt.png";
 import olivePlaidFlannelShirt from "../assets/images/products/olive-plaid-flannel-shirt.png";
 import brownCorduroyShirt from "../assets/images/products/brown-corduroy-shirt.png";
 import stripedRugbyShirt from "../assets/images/products/striped-rugby-shirt.png";
-import classicBlueJeans from "../assets/images/products/classic-blue-jeans.png";
-import classicBlackJeans from "../assets/images/products/classic-black-jeans.png";
-import khakiUtilityChinos from "../assets/images/products/khaki-utility-chinos.png";
-import grayRelaxedChinos from "../assets/images/products/gray-relaxed-chinos.png";
 
 
 export const products = [
@@ -55,42 +47,6 @@ export const products = [
     },
     {
         id: 5,
-        name: "Olive Crewneck Sweater",
-        price: 46.00,
-        size: "L",
-        category: "Sweaters",
-        description: "Soft knit sweater in a timeless olive tone. A versatile essential for everyday outfits.",
-        image: oliveCrewneckSweater,
-    },
-    {
-        id: 6,
-        name: "Oatmeal Crewneck Sweater",
-        price: 46.00,
-        size: "M",
-        category: "Sweaters",
-        description: "Cozy crewneck sweater in a warm oatmeal color. Simple, comfortable and easy to style.",
-        image: oatmealCrewneckSweater,
-    },
-    {
-        id: 7,
-        name: "Charcoal Half-Zip Sweater",
-        price: 55.00,
-        size: "XL",
-        category: "Sweaters",
-        description: "Relaxed half-zip sweater with a charcoal finish. A perfect blend of comfort and vintage appeal.",
-        image: charcoalHalfzipSweater,
-    },
-    {
-        id: 8,
-        name: "Taupe Half-Zip Sweater",
-        price: 55.00,
-        size: "L",
-        category: "Sweaters",
-        description: "Minimalist half-zip sweater in a soft taupe shade. Ideal for effortless layering.",
-        image: taupeHalfzipSweater,
-    },
-    {
-        id: 9,
         name: "Brown Corduroy Shirt",
         price: 36.00,
         size: "M",
@@ -99,7 +55,7 @@ export const products = [
         image: brownCorduroyShirt,
     },
     {
-        id: 10,
+        id: 6,
         name: "Striped Rugby Shirt",
         price: 39.00,
         size: "L",
@@ -108,7 +64,7 @@ export const products = [
         image: stripedRugbyShirt,
     },
     {
-        id: 11,
+        id: 7,
         name: "Brown Plaid Flannel Shirt",
         price: 43.00,
         size: "L",
@@ -117,7 +73,7 @@ export const products = [
         image: brownPlaidFlannelShirt,
     },
     {
-        id: 12,
+        id: 8,
         name: "Olive Plaid Flannel Shirt",
         price: 45.00,
         size: "XL",
