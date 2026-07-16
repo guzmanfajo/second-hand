@@ -3,6 +3,7 @@ function Button({
     href,
     type = "button",
     className = "",
+    onClick,
 }) {
     const baseClasses =
         "inline-block border border-(--text-primary) px-8 py-4 uppercase tracking-widest transition-colors duration-300 hover:bg-(--text-primary) hover:text-white";
@@ -22,6 +23,7 @@ function Button({
             <button
                 type={type}
                 className={`${baseClasses} ${className}`}
+                onClick={onClick}
             >
                 {children}
             </button>

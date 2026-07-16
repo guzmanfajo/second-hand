@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { ShoppingBag } from "lucide-react";
+import { useCart } from "../../hooks/useCart";
 import NavigationLink from "../ui/NavigationLink";
 
 const navigationLinks = [
@@ -9,6 +11,12 @@ const navigationLinks = [
 ];
 
 function Navbar() {
+    const { cart } = useCart();
+
+    const totalItems = cart.reduce((total, item) => {
+        return total + item.quantity;
+    }, 0);
+
     return (
         <header className="sticky top-0 z-50 border-b border-(--border) bg-(--surface)/90 backdrop-blur">
             <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-12 py-8">
@@ -38,16 +46,20 @@ function Navbar() {
 
                     </ul>
 
-                    <a
-                        href="#"
+                    <Link
+                        to="/cart"
                         aria-label="Shopping cart"
-                        className="ml-3 transition-opacity duration-300 hover:opacity-70"
+                        className="relative ml-3 transition-opacity duration-300 hover:opacity-70"
                     >
                         <ShoppingBag
                             size={22}
                             strokeWidth={1.5}
                         />
-                    </a>
+
+                        <span className="absolute -top-2 -rigth-3 flex h-5 w-5 items-center justify-center rounded-full bg-(--text-primary) text-xs text-white">
+                            {totalItems}
+                        </span>
+                    </Link>
                 </div>
             </nav>
         </header>

@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
+import { useCart } from "../hooks/useCart";
 import { products } from "../data/products";
 import Button from "../components/ui/Button";
 import ProductCard from "../components/ui/ProductCard";
 
 function Product() {
     const { id } = useParams();
+
+    const { addToCart } = useCart();
 
     const product = products.find(
         (product) => product.id === Number(id)
@@ -95,7 +98,10 @@ function Product() {
 
                         <hr className="mb-8 border-(--border)" />
 
-                        <Button className="w-fit">
+                        <Button 
+                            className="w-fit"
+                            onClick={() => addToCart(product)}
+                        >
                             Add to Cart
                         </Button>
 

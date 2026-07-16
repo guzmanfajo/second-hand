@@ -3,6 +3,7 @@ import Layout from "./components/layout/Layout";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
           <Route
             path="/products/:id"
             element={<Product />}
+          />
+
+          <Route
+            path="/cart"
+            element={<Cart />}
           />
         </Route>
       </Routes>
