@@ -1,10 +1,15 @@
+import { Trash2 } from "lucide-react";
+import { useCart } from "../../hooks/useCart";
+
 function CartItem({ item }) {
+    const { updateQuantity, removeFromCart } = useCart();
+
     return (
-        <article className="flex gap-6 rounded-xl border border-(--border) bg-(--surface) p-4 shadow-sm">
+        <article className="flex gap-6 rounded-2xl border border-(--border) bg-(--surface) p-6 shadow-sm transition-shadow hover:shadow-md">
             <img
                 src={item.image}
                 alt={item.name}
-                className="h-32 w-24 rounded-lg object-cover"
+                className="h-36 w-28 rounded-xl object-cover"
             />
 
             <div className="flex flex-1 flex-col justify-between">
@@ -13,19 +18,62 @@ function CartItem({ item }) {
                         {item.name}
                     </h2>
 
-                    <p className="mt-2 text-(--text-secondary)">
+                    <p className="mt-2 text-sm text-(--text-secondary)">
                         Size: {item.size}
                     </p>
 
-                    <p className="mt-2 text-lg font-medium text-(--text-primary)">
-                        Price: ${item.price}
-                    </p>
+                    <div className="mt-4">
+                        <p className="text-xs uppercase tracking-wider text-(--text-secondary)">
+                            Price
+                        </p>
+
+                        <p className="mt-1 text-lg font-medium text-(--text-primary)">
+                            ${item.price.toFixed(2)}
+                        </p>
+                    </div>
                 </div>
 
-                <p className="text-(--text-secondary)">
-                    Quantity: {item.quantity}
-                </p>
-                
+                <div className="mt-6 border-t border-(--border) pt-6">
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                            <button 
+                                onClick={() => updateQuantity(item.id, -1)}
+                                className="flex h-10 w-10 items-center justify-center rounded-lg border border-(--border) transition hover:bg-stone-100"
+                            >
+                                -
+                            </button>
+
+                            <span className="min-w-8 text-center text-lg font-semibold">
+                                {item.quantity}
+                            </span>
+                            
+                            <button 
+                                onClick={() => updateQuantity(item.id, 1)}
+                                className="flex h-10 w-10 items-center justify-center rounded-lg border border-(--border) transition hover:bg-stone-100"
+                            >
+                                +
+                            </button>
+                        </div>
+
+                        <div className="text-right">
+                            <p className="text-xs uppercase tracking-wider text-(--text-secondary)">
+                                Subtotal
+                            </p>
+
+                            <p className="text-xl font-semibold text-(--text-primary)">
+                                ${(item.price * item.quantity).toFixed(2)}
+                            </p>
+                        </div>
+                    </div>
+
+                    <button
+                        onClick={() => removeFromCart(item.id)}
+                        className="mt-5 flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-(--text-secondary) transition-all duration-200 hover:bg-stone-100 hover:text-(--text-primary)"
+                    >
+                        <Trash2 size={16} />
+                        Remove
+                    </button>
+                </div>
             </div>
         </article>
         
