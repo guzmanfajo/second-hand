@@ -12,20 +12,29 @@ function Footer() {
     return (
         <footer className="bg-(--text-primary) text-white">
 
-            <Container className="py-20">
+            <Container className="py-14 lg:py-20">
 
                 <div className="flex flex-col items-center">
 
                     <h2 className="mb-10">
                         <NavigationLink
                             section="home"
-                            className="text-4xl uppercase tracking-[0.25em] transition-opacity duration-300 hover:opacity-70"
+                            className="
+                                text-2xl
+                                uppercase
+                                tracking-[0.2em]
+                                transition-opacity
+                                duration-300
+                                hover:opacity-70
+                                sm:text-3xl
+                                lg:text-4xl
+                            "
                         >
                             Second Hand
                         </NavigationLink>
                     </h2>
 
-                    <ul className="flex items-center mb-10 gap-12">
+                    <ul className="mb-8 flex flex-wrap justify-center gap-x-8 gap-y-4 lg:mb-10 lg:gap-12">
                         {footerLinks.map((link) => (
                             <li key={link.section}>
                                 <NavigationLink
@@ -38,7 +47,7 @@ function Footer() {
                         ))}
                     </ul>
 
-                    <p className="text-sm text-gray-300">
+                    <p className="text-center text-sm text-gray-300">
                         © 2026 Second Hand
                     </p>
 

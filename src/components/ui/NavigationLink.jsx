@@ -5,6 +5,7 @@ function NavigationLink({
     section,
     children,
     className = "",
+    onClick,
 }) {
     const navigate = useNavigate();
     const location = useLocation();
@@ -12,6 +13,11 @@ function NavigationLink({
     const handleClick = () => {
         if (location.pathname === "/") {
             scrollToSection(section);
+            
+            if (onClick) {
+                onClick();
+            }
+
             return;
         }
 
@@ -19,6 +25,10 @@ function NavigationLink({
 
         setTimeout(() => {
             scrollToSection(section);
+
+            if (onClick) {
+                onClick();
+            }
         }, 100);
     };
 

@@ -5,7 +5,17 @@ function ScrollToTop() {
     const { pathname, hash } = useLocation();
 
     useEffect(() => {
-        if (hash) return;
+        if (hash) {
+            const element = document.querySelector(hash);
+
+            if (element) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                });
+            }
+
+            return;
+        }
 
         window.scrollTo({
             top: 0,

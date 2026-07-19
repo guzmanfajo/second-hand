@@ -21,29 +21,29 @@ function Products() {
     return (
         <section id="shop" className="bg-(--section)">
 
-            <Container className="py-32 max-w-[1650px]">
+            <Container className="max-w-[1650px] py-16 lg:py-24 xl:py-32">
                 
-                <div className="mb-14">
+                <div className="mb-10 lg:mb-14">
                     <p className="mb-3 text-sm uppercase tracking-[0.3em] text-(--text-secondary)">
                         New Arrivals
                     </p>
 
-                    <h2 className="mb-4 text-6xl">
+                    <h2 className="mb-4 text-4xl md:text-5xl xl:text-6xl">
                         Curated Vintage Pieces
                     </h2>
 
-                    <p className="max-w-2xl leading-8 text-(--text-secondary)">
+                    <p className="max-w-2xl leading-7 text-(--text-secondary) md:leading-8">
                         A carefully selected collection of timeless second-hand
                         clothing chosen for quality, character and everyday style.
                     </p>
                 </div>
 
-                <div className="mb-12 flex items-center gap-4">
+                <div className="mb-10 flex flex-wrap gap-3 lg:mb-12 lg:gap-4">
                     {categories.map((category) => (
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
-                            className={`rounded-full border px-6 py-2 text-sm uppercase tracking-wider transition-colors duration-300 ${
+                            className={`rounded-xl px-5 py-2 text-sm uppercase tracking-wider ${
                                 category === selectedCategory
                                     ? "border-(--text-primary) bg-(--text-primary) text-white"
                                     : "border-(--border) hover:bg-(--text-primary) hover:text-white"
@@ -54,7 +54,7 @@ function Products() {
                     ))}
                 </div>
                 
-                <div className="grid grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
                     {filteredProducts.map((product) => (
                         <ProductCard
                             key={product.id}
