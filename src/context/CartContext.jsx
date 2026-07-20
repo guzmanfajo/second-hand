@@ -1,8 +1,11 @@
 import { createContext, useEffect, useState } from "react";
+import { useToast } from "./ToastContext";
 
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
+    const { showToast } = useToast();
+
     const [cart, setCart] = useState(() => {
         const savedCart = localStorage.getItem("cart");
 
@@ -41,6 +44,11 @@ export function CartProvider({ children }) {
                 },
             ]);
         }
+
+        showToast(
+            "Added to cart",
+            product.name
+        );
     }
 
     function updateQuantity(id, amount) {
