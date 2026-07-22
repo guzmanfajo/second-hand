@@ -26,7 +26,7 @@ Second-Hand is a modern and responsive web application for browsing and discover
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/second-hand.git
+git clone https://github.com/guzmanfajo/second-hand.git
 ```
 
 Go to the project directory:
@@ -68,7 +68,7 @@ Add your deployed project link here.
 Example:
 
 ```
-https://your-username.github.io/second-hand/
+https://second-hand-umber.vercel.app/
 ```
 
 ## 📁 Project Structure
@@ -86,8 +86,8 @@ src/
 
 **Guzmán Fajo**
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-profile
+- GitHub: https://github.com/guzmanfajo
+- LinkedIn: https://linkedin.com/in/guzmanfajo
 
 ---
 
