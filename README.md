@@ -63,10 +63,6 @@ npm run preview
 
 ## 🌐 Live Demo
 
-Add your deployed project link here.
-
-Example:
-
 ```
 https://second-hand-umber.vercel.app/
 ```
