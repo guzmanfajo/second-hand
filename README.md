@@ -1,16 +1,94 @@
-# React + Vite
+# Second-Hand
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Second-Hand is a modern and responsive web application for browsing and discovering second-hand clothing. The project focuses on delivering a clean user experience, intuitive navigation, and a visually appealing interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive design for desktop, tablet, and mobile.
+- Modern user interface.
+- Category-based navigation.
+- Product detail pages.
+- Fast performance with Vite.
+- Client-side routing using React Router.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- Tailwind CSS
+- React Router
+- HTML5
+- CSS3
 
-## Expanding the ESLint configuration
+## ⚙️ Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/second-hand.git
+```
+
+Go to the project directory:
+
+```bash
+cd second-hand
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 📦 Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🌐 Live Demo
+
+Add your deployed project link here.
+
+Example:
+
+```
+https://your-username.github.io/second-hand/
+```
+
+## 📁 Project Structure
+
+```
+src/
+│── assets/
+│── components/
+│── pages/
+│── App.jsx
+│── main.jsx
+```
+
+## 👨‍💻 Author
+
+**Guzmán Fajo**
+
+- GitHub: https://github.com/your-username
+- LinkedIn: https://linkedin.com/in/your-profile
+
+---
+
+If you like this project, consider giving it a ⭐ on GitHub.
