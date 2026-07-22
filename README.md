@@ -63,9 +63,7 @@ npm run preview
 
 ## 🌐 Live Demo
 
-```
-https://second-hand-umber.vercel.app/
-```
+**Live site:** https://second-hand-umber.vercel.app/
 
 ## 📁 Project Structure
 
